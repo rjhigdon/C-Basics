@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Learning.Random
+namespace Learning.Inheritenace
 {
-    public class Part
+    public class Ping : BaseNetworkUtility
     {
-        public string? PartName { get; set; }
-        public int PartId { get; set; }
+
     }
 }

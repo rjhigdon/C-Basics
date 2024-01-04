@@ -229,7 +229,7 @@ arlo2.WalkToCountry();
 // you can also edit the init for the any of the inheriting classes by
 // putting virtual in the base class and override in the inheriting class (Check IPV6 and basePing class)
 
-
+/*
 using Learning;
 
 PingIPV6 pingIPV6 = new PingIPV6();
@@ -239,6 +239,48 @@ Console.WriteLine(pingIPV6.SendPing());
 PingIPV4 pingIPV4 = new PingIPV4(); 
 Console.WriteLine(pingIPV4.Init());
 Console.WriteLine(pingIPV4.SendPing());
+*/
 
+//////////////////////////////////// Inheritance
 
+// Passes properties and Methods from one class to another
+// is the one class a subsection of the larger class? 
+// then its a good time for inheritance
+// Have you copy pasted Specs for your class 3x?
+// Then its a good time for intheritance
+// this follows all the same naming conventions and such in your 
+// Abstract classes and Interfaces
 
+//////////////////////////////////// Polymorphism
+
+// simply means many forms 
+/*
+using System.Diagnostics.Contracts;
+
+Animal turtle = new Turtle(); // Instantiate an object of the Turtle class which is also Animal
+class Animal
+{
+    public virtual void AnimalNoise()
+    {
+        Console.WriteLine("Animal Noise");
+    }
+}
+
+class Turtle : Animal
+{
+    public override void AnimalNoise()
+    {
+        Console.WriteLine("Turtle Noise");
+    }
+}
+*/
+
+//////////////////////////////////// Constructors
+
+//allows you to pass info to and from when building objects of classes
+//(Check NetworkHelper for constructor)
+
+using Learning;
+
+NetworkHelper nWConstr = new NetworkHelper("Brick");
+Console.WriteLine(nWConstr.Name);
